@@ -20,4 +20,4 @@ di scorrere e mostrare la slide selezionata
 
 
 inserisci due bottoni up e down 
-dai a questi bottoni la funzione di cambiare slide 
+dai a questi bottoni la funzione di ascoltare al click  di cambiare slide 
