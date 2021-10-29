@@ -12,12 +12,18 @@ crea la struttura sull html
 un immagine grande con degli slide piu piccoli a destra ....
 
 
-stampa una slide come immagine principale del carousel 
+stampa la prima immagine del object  come immagine principale del carousel 
 
-
-fai una funzione con un ciclio  che ti permette 
-di scorrere e mostrare la slide selezionata 
 
 
 inserisci due bottoni up e down 
-dai a questi bottoni la funzione di ascoltare al click  di cambiare slide 
+
+
+crea una funzione che ti permette di aumentare e diminuire un contatore 
+collega i due bottoni al contatore 
+
+
+
+
+
+
