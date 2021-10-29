@@ -10,13 +10,18 @@
 </head>
 <body>
     
-    <div id="app" class="container">
+    <div id="app" class="container d-flex">
+
         <div v-for="slide in slides" class="preview">
             <img :src="slide.items" alt="">
             <h2>{{slide.title}}</h2>
             <p>{{slide.text}}</p>
         </div>
-        
+
+        <div v-for="slide in slides" class="slide_container">
+            <img :src="slide.items" alt="">
+        </div>
+
     </div>
 
 
