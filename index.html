@@ -13,11 +13,12 @@
     <div id="app" class="container d-flex">
 
         <div  class="preview">
-            <img :src=slide[counter].item>
-            <h2 >{{slide[counter].title}}</h2>
-            <p>{{slide[counter].text}}</p>
+            <img :src=slides[counter].item>
+            <h2 >{{slides[counter].title}}</h2>
+            <p>{{slides[counter].text}}</p>
         </div>
-
+        <button-counter>Up</button-counter>
+        <button-counter>Down</button-counter>
         <div v-for="slide in slides" class="slide_container">
             <img :src="slide.items" alt="">
         </div>
