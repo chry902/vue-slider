@@ -1,0 +1,23 @@
+prendi gli array dell esercizio passato, crea degli objct con gli stessi items
+-items 
+-title
+-text
+
+
+una volta creato object
+stampa tutto dal html con un ciclio for
+
+
+crea la struttura sull html 
+un immagine grande con degli slide piu piccoli a destra ....
+
+
+stampa una slide come immagine principale del carousel 
+
+
+fai una funzione con un ciclio  che ti permette 
+di scorrere e mostrare la slide selezionata 
+
+
+inserisci due bottoni up e down 
+dai a questi bottoni la funzione di cambiare slide 
