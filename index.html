@@ -6,22 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./stye.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
     <div id="app" class="container d-flex">
 
-        <div  class="preview">
-            <img :src=slides[counter].item>
-            <h2 >{{slides[counter].title}}</h2>
-            <p>{{slides[counter].text}}</p>
+        <div  class="preview position-relative d-flex justify-content-end">
+            <div class="text_container  position-absolute  ">
+                <h2 class="text-white fs-1">{{slides[counter].title}}</h2>
+                <p class="text-white fs-6">{{slides[counter].text}}</p>
+            </div>
+            <img :src="slides[counter].item">
         </div>
-        <button-counter>Up</button-counter>
-        <button-counter>Down</button-counter>
-        <div v-for="slide in slides" class="slide_container">
-            <img :src="slide.items" alt="">
-        </div>
+
+       
+        
+            <div v-if="counter != index" v-for="(slide, index) in slides" class="slide_container flex-column">
+                <img :src="slide.item" alt="">
+                <div>
+                    <button id="slideUp" @click="slideUp" >Up</button>
+                    <button id="slideDown" @click="slideDown">Down</button>
+                </div>
+                
+            </div>
+                
+            
+            
+            
+
+           
+        
+        
 
     </div>
 

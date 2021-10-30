@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.slide_container{
+    
+    height: calc (100% /5) ;
+}
+.preview{
+    width: 750px;
+    height: 400px;
+}
+.text_container{
+    bottom: 0;
+    right: 0;
+}
+.text_container> h2, p{
+    text-align: end;
+    padding-right: 2rem;
+}
+.preview>img{
+    width: 100%;
+}
+
+
+
+.slide_container>img{
+    width: 200px;
+    
+}
