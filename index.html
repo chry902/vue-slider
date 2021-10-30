@@ -10,34 +10,37 @@
 </head>
 <body>
     
-    <div id="app" class="container d-flex">
+    <div id="app" class="container d-flex ">
 
-        <div  class="preview position-relative d-flex justify-content-end">
-            <div class="text_container  position-absolute  ">
-                <h2 class="text-white fs-1">{{slides[counter].title}}</h2>
-                <p class="text-white fs-6">{{slides[counter].text}}</p>
+
+        <div class="preview d-flex m-auto mt-5">
+
+            <div  class="jumbo_image position-relative d-flex justify-content-end">
+                <div class="text_container  position-absolute  ">
+                    <h2 class="text-white fs-1">{{slides[counter].title}}</h2>
+                    <p class="text-white fs-6">{{slides[counter].text}}</p>
+                </div>
+                <img :src="slides[counter].item">
             </div>
-            <img :src="slides[counter].item">
-        </div>
+    
+           
+            <div class="slide_container d-flex  flex-column ">
 
-       
-        
-            <div v-if="counter != index" v-for="(slide, index) in slides" class="slide_container flex-column">
-                <img :src="slide.item" alt="">
-                <div>
-                    <button id="slideUp" @click="slideUp" >Up</button>
-                    <button id="slideDown" @click="slideDown">Down</button>
+                <div class="button_contain d-flex   flex-column align-items-center justify-content-between position-absolute">
+                    <button class="" id="slideUp" @click="slideUp" >Up</button>
+                    <button class="" id="slideDown" @click="slideDown">Down</button>
                 </div>
                 
-            </div>
+                <div  v-for="(slide, counter) in slides" class="slide ">
+                    <img :src="slide.item" alt="">
+                </div>
+                    
                 
-            
-            
-            
+            </div>
 
-           
+        </div>
         
-        
+       
 
     </div>
 
