@@ -40,27 +40,33 @@ const app = new Vue({
     },
 
 
-    /**  methods: {
-    
-            slideUp: function () {
+    methods: {
+
+        slideUp: function () {
+
+            if (this.counter == 0) {
+                this.counter = this.slides.length - 1;
+            } else {
                 this.counter--;
-                if (this.counter < 0) {
-                    this.counter = this.slides.length - 1;
-                }
-            },
-    
-    
-            slideDown: function () {
-                this.counter++;
-                if (this.counter == this.slides.length - 1) {
-                    this.counter = 0;
-                }
-            },
-    
-    
-    
-    
-        }*/
+            }
+
+        },
+
+
+        slideDown: function () {
+
+            if (this.counter == this.slides.length - 1) {
+                this.counter = 0;
+            } else {
+                this.counter++
+            }
+
+        },
+
+
+
+
+    }
 
 
 })
